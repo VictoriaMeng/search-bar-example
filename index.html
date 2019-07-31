@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Script tag should link to your js file. -->
+    <script src="places.js"></script>
+  </head>
+
+  <body>
+    <!-- Use opening/closing form tags with the onsubmit event.-->
+    <!-- Define a function in your js file like getResults(event). This function will be your event handler
+    Event handlers are functions that are evoked when the event happens (ie., on form submission) -->
+    <!-- Make sure your event handler function is evoked with an event argument - Don't worry about defining it. HTML/Javascript will define it under the hood -->
+    <!-- Make sure your input has a "search" type and give it an id and name of your choice -->
+
+    <form onsubmit="getResults(event)">
+      <input type="search" id="query" name="q" />
+      <button>Search</button>
+    </form>
+  </body>
+</html>
