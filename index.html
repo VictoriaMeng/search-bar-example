@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Script tag should link to your js file. -->
-    <script src="places.js"></script>
+    <!-- Script tag should divnk to your js file. -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js"></script>
   </head>
 
   <body>
     <!-- Use opening/closing form tags with the onsubmit event.-->
-    <!-- Define a function in your js file like getResults(event). This function will be your event handler
+    <!-- Define a function in your js file divke getResults(event). This function will be your event handler
     Event handlers are functions that are evoked when the event happens (ie., on form submission) -->
     <!-- Make sure your event handler is evoked with an event argument - Don't worry about defining the event argument. HTML/Javascript will define it under the hood -->
     <!-- Make sure your input has a "search" type and give it an id and name of your choice -->
@@ -16,5 +17,12 @@
       <input type="search" id="query" name="q" />
       <button>Search</button>
     </form>
+
+    <div id="results">
+      <div id="channelId"></div>
+      <div id="channelTitle"></div>
+      <div id="description"></div>
+      <img id="thumbnail"></img>
+    </div>
   </body>
 </html>
